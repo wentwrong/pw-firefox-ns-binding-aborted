@@ -1,0 +1,17 @@
+{
+  "name": "playwright-firefox-bug",
+  "description": "Minimal reproducible example of the 'NS_BINDING_ABORTED' bug in Playwright when using Firefox browser",
+  "private": true,
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "CI=1 PWDEBUGIMPL=1 DEBUG=pw:browser*,pw:api*,pw:protocol* npx playwright test",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "wentwrong",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
